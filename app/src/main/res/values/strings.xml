@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CSVtoSMS</string>
+    <string name="number">number</string>
+    <string name="message">message</string>
+    <string name="send">send</string>
+    <string name="cancel">Cancel</string>
+    <string name="fileopen">file open</string>2
+    <string name="explain">Send SMS to CSV column\'s \'tel\' with \'message\'. If message is long to send a SMS, split messages will send</string>
+</resources>

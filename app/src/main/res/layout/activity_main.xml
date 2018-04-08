@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bungabear.csvtosms.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:id="@+id/tv_explain"
+        android:gravity="center"
+        android:text="@string/explain" />
+    <!--<TextView-->
+    <!--android:id="@+id/tv_number"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/number"-->
+    <!--app:layout_constraintTop_toTopOf="@id/et_number"-->
+    <!--app:layout_constraintBottom_toBottomOf="@id/et_number"-->
+    <!--/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_number"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="number"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/tv_number"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_message"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/message"-->
+    <!--app:layout_constraintTop_toTopOf="@id/et_message"-->
+    <!--app:layout_constraintBottom_toBottomOf="@id/et_message"-->
+    <!--/>-->
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_message"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="textMultiLine"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/tv_number"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/tv_message"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_send"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/send"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/btn_cancel"-->
+    <!--app:layout_constraintHorizontal_chainStyle="packed"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/btn_cancel"-->
+    <!--app:layout_constraintBottom_toBottomOf="@id/btn_send"-->
+    <!--app:layout_constraintStart_toEndOf="@id/btn_send"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/btn_open"-->
+    <!--app:layout_constraintHorizontal_chainStyle="packed"-->
+    <!--android:text="@string/cancel"-->
+    <!--/>-->
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fileopen"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_explain" />
+
+    <ListView
+        android:id="@+id/lv_sendlist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_open"
+        />
+
+</android.support.constraint.ConstraintLayout>
